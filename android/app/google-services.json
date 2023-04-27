@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "867573141628",
+    "project_id": "jogging-cd8e5",
+    "storage_bucket": "jogging-cd8e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867573141628:android:9c840addf97b0a6df479f9",
+        "android_client_info": {
+          "package_name": "com.jogging.app.jogging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867573141628-9hri5mckt0kbr2lo0ljbe7717srjmpep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0V4tVYWaVOvq4BW6Eqr0sjIUIepr2Qws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867573141628-9hri5mckt0kbr2lo0ljbe7717srjmpep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
