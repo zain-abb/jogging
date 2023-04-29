@@ -1,0 +1,130 @@
+import 'package:flutter/material.dart';
+
+class AppTypography {
+  AppTypography._();
+
+  static const fontFamily = 'Roboto';
+
+  static const textTheme = TextTheme(
+    displayLarge: TextStyle(
+      fontSize: 57.0,
+      fontWeight: FontWeight.w400,
+      letterSpacing: -0.25,
+      height: 1.12,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    displayMedium: TextStyle(
+      fontSize: 45.0,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.0,
+      height: 1.16,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    displaySmall: TextStyle(
+      fontSize: 36.0,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.0,
+      height: 1.22,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    headlineLarge: TextStyle(
+      fontSize: 32.0,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.0,
+      height: 1.25,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    headlineMedium: TextStyle(
+      fontSize: 28.0,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.0,
+      height: 1.29,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    headlineSmall: TextStyle(
+      fontSize: 24.0,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.0,
+      height: 1.33,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    titleLarge: TextStyle(
+      fontSize: 22.0,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.0,
+      height: 1.27,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    titleMedium: TextStyle(
+      fontSize: 16.0,
+      fontWeight: FontWeight.w500,
+      letterSpacing: 0.15,
+      height: 1.50,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    titleSmall: TextStyle(
+      fontSize: 14.0,
+      fontWeight: FontWeight.w500,
+      letterSpacing: 0.1,
+      height: 1.43,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    labelLarge: TextStyle(
+      fontSize: 14.0,
+      fontWeight: FontWeight.w500,
+      letterSpacing: 0.1,
+      height: 1.43,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    labelMedium: TextStyle(
+      fontSize: 12.0,
+      fontWeight: FontWeight.w500,
+      letterSpacing: 0.5,
+      height: 1.33,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    labelSmall: TextStyle(
+      fontSize: 11.0,
+      fontWeight: FontWeight.w500,
+      letterSpacing: 0.5,
+      height: 1.45,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    bodyLarge: TextStyle(
+      fontSize: 16.0,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.5,
+      height: 1.50,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    bodyMedium: TextStyle(
+      fontSize: 14.0,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.25,
+      height: 1.43,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+    bodySmall: TextStyle(
+      fontSize: 12.0,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.4,
+      height: 1.33,
+      textBaseline: TextBaseline.alphabetic,
+      leadingDistribution: TextLeadingDistribution.even,
+    ),
+  );
+}
