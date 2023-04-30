@@ -8,12 +8,10 @@ part 'app_exception.freezed.dart';
 @freezed
 class AppException with _$AppException {
   // Auth
-  const factory AppException.emailAlreadyInUse() = EmailAlreadyInUse;
-  const factory AppException.weakPassword() = WeakPassword;
-  const factory AppException.wrongPassword() = WrongPassword;
-  const factory AppException.userNotFound() = UserNotFound;
-  // Orders
-  const factory AppException.parseOrderFailure(String status) = ParseOrderFailure;
+  const factory AppException.accountExists() = AccountExists;
+  const factory AppException.invalidCredentials() = InvalidCredentials;
+  const factory AppException.unknown() = Unknown;
+  const factory AppException.noInternet() = NoInternet;
 }
 
 class AppExceptionData extends Equatable {
@@ -32,26 +30,22 @@ extension AppExceptionDetails on AppException {
   AppExceptionData get details {
     return when(
       // Auth
-      emailAlreadyInUse: () => AppExceptionData(
-        'email-already-in-use',
-        'Email already in use'.hardcoded,
+      accountExists: () => AppExceptionData(
+        'account-exists-with-different-credential',
+        'The account already exists with a different credential.'.hardcoded,
       ),
-      weakPassword: () => AppExceptionData(
-        'weak-password',
-        'Password is too weak'.hardcoded,
+      invalidCredentials: () => AppExceptionData(
+        'invalid-credential',
+        'Error occurred while accessing credentials. Try again.'.hardcoded,
       ),
-      wrongPassword: () => AppExceptionData(
-        'wrong-password',
-        'Wrong password'.hardcoded,
+      unknown: () => AppExceptionData(
+        'unknown',
+        'Something went wrong. Try Again!'.hardcoded,
       ),
-      userNotFound: () => AppExceptionData(
-        'user-not-found',
-        'User not found'.hardcoded,
-      ),
-      // Orders
-      parseOrderFailure: (status) => AppExceptionData(
-        'parse-order-failure',
-        'Could not parse order status: $status'.hardcoded,
+      noInternet: () => AppExceptionData(
+        'no-internet',
+        "It's look like you are not connected to internet. Check your Internet settings and try again."
+            .hardcoded,
       ),
     );
   }

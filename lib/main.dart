@@ -22,8 +22,6 @@ void main() async {
   // Shared Preferences initialization for the provider
   final sharedPreferences = await SharedPreferences.getInstance();
 
-  // var brightness = MediaQuery.of(context).platformBrightness;
-
   // Firebase initialization
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

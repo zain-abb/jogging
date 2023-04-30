@@ -47,6 +47,8 @@ dependencies:
   firebase_auth: ^4.4.2
   # To implement Google Sign in
   google_sign_in: ^6.1.0
+  # To check the internet connection
+  internet_connection_checker: ^1.0.0+1
 
 dev_dependencies:
   flutter_test:
@@ -73,3 +75,13 @@ flutter:
 
   assets:
     - assets/
+    - assets/images/
+    - assets/svgs/
+
+  fonts:
+    - family: Vollkorn
+      fonts:
+        - asset: fonts/Vollkorn.ttf
+    - family: Inter
+      fonts:
+        - asset: fonts/Inter.ttf
