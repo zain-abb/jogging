@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "867573141628-9hri5mckt0kbr2lo0ljbe7717srjmpep.apps.googleusercontent.com",
+          "client_id": "867573141628-88qbkfk6kbn6mdjlnjk1ritfiutm61dq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jogging.app.jogging",
+            "certificate_hash": "cc4c5df28bc45eeaa76a2fec7b0941104d744a55"
+          }
+        },
+        {
+          "client_id": "867573141628-mrlg6d0bl97p4ni42pujnvl4o9jh75jg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -29,6 +37,13 @@
             {
               "client_id": "867573141628-9hri5mckt0kbr2lo0ljbe7717srjmpep.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "867573141628-emebdihjbpn7v85np64s1ehtb6vjuihh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jogging.app.jogging"
+              }
             }
           ]
         }

@@ -13,7 +13,7 @@ class JoggingApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final appRouter = AppRouter();
+    final appRouter = ref.watch(appRouterProvider);
     return AdaptiveTheme(
       // Light Theme
       light: AppTheme.lightTheme,

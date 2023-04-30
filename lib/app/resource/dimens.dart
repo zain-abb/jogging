@@ -2,35 +2,35 @@ import 'package:flutter/material.dart';
 
 /// Keeps various dimension and values to be used by presentation layer
 class Dimens {
-  static const p4 = 4.0;
-  static const p8 = 8.0;
-  static const p12 = 12.0;
-  static const p16 = 16.0;
-  static const p20 = 20.0;
-  static const p24 = 24.0;
-  static const p32 = 32.0;
-  static const p48 = 48.0;
-  static const p64 = 64.0;
+  final p4 = 4.0;
+  final p8 = 8.0;
+  final p12 = 12.0;
+  final p16 = 16.0;
+  final p20 = 20.0;
+  final p24 = 24.0;
+  final p32 = 32.0;
+  final p48 = 48.0;
+  final p64 = 64.0;
 
   /// Constant gap widths
-  static const gapW4 = SizedBox(width: p4);
-  static const gapW8 = SizedBox(width: p8);
-  static const gapW12 = SizedBox(width: p12);
-  static const gapW16 = SizedBox(width: p16);
-  static const gapW20 = SizedBox(width: p20);
-  static const gapW24 = SizedBox(width: p24);
-  static const gapW32 = SizedBox(width: p32);
-  static const gapW48 = SizedBox(width: p48);
-  static const gapW64 = SizedBox(width: p64);
+  final gapW4 = const SizedBox(width: 4.0);
+  final gapW8 = const SizedBox(width: 8.0);
+  final gapW12 = const SizedBox(width: 12.0);
+  final gapW16 = const SizedBox(width: 16.0);
+  final gapW20 = const SizedBox(width: 20.0);
+  final gapW24 = const SizedBox(width: 24.0);
+  final gapW32 = const SizedBox(width: 32.0);
+  final gapW48 = const SizedBox(width: 48.0);
+  final gapW64 = const SizedBox(width: 64.0);
 
   /// Constant gap heights
-  static const gapH4 = SizedBox(height: p4);
-  static const gapH8 = SizedBox(height: p8);
-  static const gapH12 = SizedBox(height: p12);
-  static const gapH16 = SizedBox(height: p16);
-  static const gapH20 = SizedBox(height: p20);
-  static const gapH24 = SizedBox(height: p24);
-  static const gapH32 = SizedBox(height: p32);
-  static const gapH48 = SizedBox(height: p48);
-  static const gapH64 = SizedBox(height: p64);
+  final gapH4 = const SizedBox(height: 4.0);
+  final gapH8 = const SizedBox(height: 8.0);
+  final gapH12 = const SizedBox(height: 12.0);
+  final gapH16 = const SizedBox(height: 16.0);
+  final gapH20 = const SizedBox(height: 20.0);
+  final gapH24 = const SizedBox(height: 24.0);
+  final gapH32 = const SizedBox(height: 32.0);
+  final gapH48 = const SizedBox(height: 48.0);
+  final gapH64 = const SizedBox(height: 64.0);
 }

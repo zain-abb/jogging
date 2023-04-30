@@ -6,10 +6,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jogging/shared/presentation/widgets/ui_helper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../shared/domain/exception/app_exception.dart';
-import '../shared/presentation/utils/alert_dialogs.dart';
 
 extension StringExtension on String {
   String get capitalize => '${this[0].toUpperCase()}${substring(1).toLowerCase()}';
@@ -41,11 +41,7 @@ extension AsyncValueUI on AsyncValue {
   void showAlertDialogOnError(BuildContext context) {
     if (!isLoading && hasError) {
       final message = _errorMessage(error);
-      showExceptionAlertDialog(
-        context: context,
-        title: 'Error'.hardcoded,
-        exception: message,
-      );
+      UiHelper.displayError(context, message);
     }
   }
 

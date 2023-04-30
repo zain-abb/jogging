@@ -29,6 +29,7 @@ class UiHelper {
   static void displayError(BuildContext context, String message) {
     final theme = Theme.of(context);
     final snackBar = SnackBar(
+      behavior: SnackBarBehavior.floating,
       content: Text(
         message,
         style: theme.textTheme.labelMedium?.copyWith(color: theme.colorScheme.onError),

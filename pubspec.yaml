@@ -12,36 +12,61 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Flutter Localization for multiple languages
   flutter_localizations:
     sdk: flutter
-
+  # Internationalization
   intl: ^0.17.0
+  # Icons
   cupertino_icons: ^1.0.5
+  # Navigator 2.0
   auto_route: ^6.4.0
+  # To Check Internet Connectivity
   connectivity_plus: ^3.0.6
+  # To implement dynamic theming
   adaptive_theme: ^3.2.0
+  # For functional programming
   dartz: ^0.10.1
+  # For internet requests
   dio: ^5.1.1
+  # For hashcode mapping
   equatable: ^2.0.5
+  # For State Management
   flutter_riverpod: ^2.3.6
-  freezed_annotation: ^2.2.0
-  shared_preferences: ^2.1.0
   riverpod_annotation: ^2.1.1
+  # For generating freezed classes
+  freezed_annotation: ^2.2.0
+  # For storing key-values
+  shared_preferences: ^2.1.0
+  # For network image caching
   cached_network_image: 3.2.3
+  # To load SVGs
   flutter_svg: ^2.0.5
+  # Firebase
   firebase_core: ^2.10.0
   firebase_auth: ^4.4.2
+  # To implement Google Sign in
+  google_sign_in: ^6.1.0
+  # To check the internet connection
+  internet_connection_checker: ^1.0.0+1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  # To build generative classes
   build_runner: ^2.3.3
+  # For flutter lints
   flutter_lints: ^2.0.1
+  # To generate DTOs
   freezed: ^2.3.2
+  # To create custom rules
   custom_lint: 0.3.4
+  # For riverpod best practices
   riverpod_lint: ^1.3.1
+  # To generate RiverPod providers
   riverpod_generator: ^2.2.1
+  # To generate router config
   auto_route_generator: ^6.2.0
 
 flutter:
@@ -50,3 +75,13 @@ flutter:
 
   assets:
     - assets/
+    - assets/images/
+    - assets/svgs/
+
+  fonts:
+    - family: Vollkorn
+      fonts:
+        - asset: fonts/Vollkorn.ttf
+    - family: Inter
+      fonts:
+        - asset: fonts/Inter.ttf

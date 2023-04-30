@@ -22,26 +22,10 @@ void main() async {
   // Shared Preferences initialization for the provider
   final sharedPreferences = await SharedPreferences.getInstance();
 
-  // var brightness = MediaQuery.of(context).platformBrightness;
-
   // Firebase initialization
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-
-  // Customize status bar and icons
-  // SystemChrome.setSystemUIOverlayStyle(
-  //   SystemUiOverlayStyle.light.copyWith(
-  //     statusBarColor: Colors.black,
-  //     statusBarBrightness: Brightness.light,
-  //   ),
-  // );
-  // SystemChrome.setSystemUIOverlayStyle(
-  //   SystemUiOverlayStyle.dark.copyWith(
-  //     statusBarColor: Colors.white,
-  //     statusBarBrightness: Brightness.dark,
-  //   ),
-  // );
 
   // Set portrait orientation only
   SystemChrome.setPreferredOrientations([
