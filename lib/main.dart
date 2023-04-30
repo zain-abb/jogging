@@ -29,20 +29,6 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  // Customize status bar and icons
-  // SystemChrome.setSystemUIOverlayStyle(
-  //   SystemUiOverlayStyle.light.copyWith(
-  //     statusBarColor: Colors.black,
-  //     statusBarBrightness: Brightness.light,
-  //   ),
-  // );
-  // SystemChrome.setSystemUIOverlayStyle(
-  //   SystemUiOverlayStyle.dark.copyWith(
-  //     statusBarColor: Colors.white,
-  //     statusBarBrightness: Brightness.dark,
-  //   ),
-  // );
-
   // Set portrait orientation only
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
