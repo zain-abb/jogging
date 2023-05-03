@@ -25,7 +25,7 @@ class _DailyViewState extends ConsumerState<DailyView> {
     delay(
         milliseconds: 200,
         operation: () {
-          _fetchDailyData();
+          // _fetchDailyData();
           // _fetchStepsInInterval();
         });
   }
