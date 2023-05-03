@@ -49,6 +49,17 @@ dependencies:
   google_sign_in: ^6.1.0
   # To check the internet connection
   internet_connection_checker: ^1.0.0+1
+  # To connect to Health Connect (Android) and HealthKit (iOS)
+  health: ^6.0.0
+  # Permission handler
+  permission_handler: ^10.2.0
+  # To draw charts
+  fl_chart: ^0.62.0
+  # To draw percent indicators
+  percent_indicator: ^4.2.3
+  # To create custom calendar
+  syncfusion_flutter_calendar: ^21.1.41
+  syncfusion_flutter_core: ^21.1.41
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +79,18 @@ dev_dependencies:
   riverpod_generator: ^2.2.1
   # To generate router config
   auto_route_generator: ^6.2.0
+  # To generate app icon
+  flutter_launcher_icons: 0.13.1
+
+# Custom app icon. For more info see: https://pub.dev/packages/flutter_launcher_icons
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app-icon.png"
+  remove_alpha_ios: true
+  # https://github.com/fluttercommunity/flutter_launcher_icons/issues/144
+  adaptive_icon_background: "assets/images/app-icon-background.png"
+  adaptive_icon_foreground: "assets/images/app-icon-foreground.png"
 
 flutter:
   generate: true
@@ -79,9 +102,24 @@ flutter:
     - assets/svgs/
 
   fonts:
-    - family: Vollkorn
+    - family: SF-Pro-Display
       fonts:
-        - asset: fonts/Vollkorn.ttf
-    - family: Inter
-      fonts:
-        - asset: fonts/Inter.ttf
+        - asset: fonts/SF-Pro-Display-Black.otf
+          weight: 900
+        - asset: fonts/SF-Pro-Display-Heavy.otf
+          weight: 800
+        - asset: fonts/SF-Pro-Display-Bold.otf
+          weight: 700
+        - asset: fonts/SF-Pro-Display-Semibold.otf
+          weight: 600
+        - asset: fonts/SF-Pro-Display-Medium.otf
+          weight: 500
+        - asset: fonts/SF-Pro-Display-Regular.otf
+          weight: 400
+        - asset: fonts/SF-Pro-Display-Light.otf
+          weight: 300
+        - asset: fonts/SF-Pro-Display-Thin.otf
+          weight: 200
+        - asset: fonts/SF-Pro-Display-Ultralight.otf
+          weight: 100
+

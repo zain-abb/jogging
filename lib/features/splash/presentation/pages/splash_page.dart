@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jogging/app/router/app_router.dart';
 import 'package:jogging/app/router/app_router.gr.dart';
+import 'package:jogging/features/authentication/presentation/controller/authentication_controller.dart';
 
 import '../../../../app/resource/assets.dart';
 import '../../../../shared/presentation/utils/delay.dart';
@@ -22,9 +23,17 @@ class _SplashPageState extends ConsumerState<SplashPage> {
   void initState() {
     super.initState();
 
-    delay(operation: () {
+    delay(operation: () async {
       final router = ref.read(appRouterProvider);
-      router.push(const AuthenticationRoute());
+      final authState = ref.read(authenticationControllerProvider.notifier);
+
+      PageRouteInfo<void> route;
+      if (authState.currentUser != null) {
+        route = const HomeRoute();
+      } else {
+        route = const AuthenticationRoute();
+      }
+      router.push(route);
     });
   }
 

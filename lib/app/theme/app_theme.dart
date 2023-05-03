@@ -14,6 +14,7 @@ class AppTheme {
         useMaterial3: true,
         brightness: Brightness.light,
         colorScheme: ColorSchemes.lightColorScheme,
+        fontFamily: AppTypography.fontFamily,
         textTheme: AppTypography.textTheme,
         // Extensions
         extensions: const <ThemeExtension<dynamic>>[
@@ -25,6 +26,7 @@ class AppTheme {
         useMaterial3: true,
         brightness: Brightness.dark,
         colorScheme: ColorSchemes.darkColorScheme,
+        fontFamily: AppTypography.fontFamily,
         textTheme: AppTypography.textTheme,
         // Extensions
         extensions: const <ThemeExtension<dynamic>>[

@@ -34,7 +34,8 @@ class AuthenticationController extends _$AuthenticationController {
   }
 
   /// Helper method to convert a [User] to an [AppUser]
-  AppUser? _convertUser(User? user) => user != null ? FirebaseAppUser(user) : null;
+  AppUser? _convertUser(User? user) =>
+      user != null ? FirebaseAppUser(user) : null;
 
   Stream<AppUser?> authStateChanges() {
     final auth = ref.watch(firebaseAuthProvider);
@@ -46,6 +47,7 @@ class AuthenticationController extends _$AuthenticationController {
 // * [AlwaysAliveProviderListenable]
 @Riverpod(keepAlive: true)
 Stream<AppUser?> authStateChanges(AuthStateChangesRef ref) {
-  final authenticationController = ref.watch(authenticationControllerProvider.notifier);
+  final authenticationController =
+      ref.watch(authenticationControllerProvider.notifier);
   return authenticationController.authStateChanges();
 }

@@ -6,7 +6,7 @@ part of 'authentication_controller.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$authStateChangesHash() => r'774b974159436f12cf16f713a7c77550e00ab88a';
+String _$authStateChangesHash() => r'1b21408fff4b99e6db1ad768faae8dc49af24396';
 
 /// See also [authStateChanges].
 @ProviderFor(authStateChanges)
@@ -22,7 +22,7 @@ final authStateChangesProvider = StreamProvider<AppUser?>.internal(
 
 typedef AuthStateChangesRef = StreamProviderRef<AppUser?>;
 String _$authenticationControllerHash() =>
-    r'f9816d0cb0338043a682c5104b9b984788c13829';
+    r'71cc0f22fd8cae362cc367d1a518a82736a6b2b3';
 
 /// See also [AuthenticationController].
 @ProviderFor(AuthenticationController)

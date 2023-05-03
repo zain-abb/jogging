@@ -1,9 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jogging.app.jogging">
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.health.READ_STEPS"/>
+    <uses-permission android:name="android.permission.health.WRITE_STEPS"/>
    <application
-        android:label="jogging"
+        android:label="Jogging"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -31,4 +34,7 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+    <queries>
+        <package android:name="com.google.android.apps.healthdata" />
+    </queries>
 </manifest>

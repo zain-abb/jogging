@@ -12,6 +12,10 @@ class AppException with _$AppException {
   const factory AppException.invalidCredentials() = InvalidCredentials;
   const factory AppException.unknown() = Unknown;
   const factory AppException.noInternet() = NoInternet;
+  const factory AppException.healthFetchFailed() = HealthFetchFailed;
+  const factory AppException.healthNotAuthorized() = HealthNotAuthorized;
+  const factory AppException.healthStepsFailed() = HealthStepsFailed;
+  const factory AppException.revokePermissionFailed() = RevokePermissionFailed;
 }
 
 class AppExceptionData extends Equatable {
@@ -45,6 +49,26 @@ extension AppExceptionDetails on AppException {
       noInternet: () => AppExceptionData(
         'no-internet',
         "It's look like you are not connected to internet. Check your Internet settings and try again."
+            .hardcoded,
+      ),
+      healthFetchFailed: () => AppExceptionData(
+        'health-data-fetch-failed',
+        'Something went wrong while fetching the data. Please try again!'
+            .hardcoded,
+      ),
+      healthNotAuthorized: () => AppExceptionData(
+        'health-permission-not-granted',
+        'We do not have the permission to access your health data. Please grant permission to continue!'
+            .hardcoded,
+      ),
+      healthStepsFailed: () => AppExceptionData(
+        'health-step-count-fetch-failed',
+        'Something went wrong while fetching your steps count. Please try again!'
+            .hardcoded,
+      ),
+      revokePermissionFailed: () => AppExceptionData(
+        'health-permission-revoke-failed',
+        'Something went wrong while revoking health permissions. Please try again!'
             .hardcoded,
       ),
     );

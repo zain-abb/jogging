@@ -22,6 +22,10 @@ mixin _$AppException {
     required TResult Function() invalidCredentials,
     required TResult Function() unknown,
     required TResult Function() noInternet,
+    required TResult Function() healthFetchFailed,
+    required TResult Function() healthNotAuthorized,
+    required TResult Function() healthStepsFailed,
+    required TResult Function() revokePermissionFailed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,6 +34,10 @@ mixin _$AppException {
     TResult? Function()? invalidCredentials,
     TResult? Function()? unknown,
     TResult? Function()? noInternet,
+    TResult? Function()? healthFetchFailed,
+    TResult? Function()? healthNotAuthorized,
+    TResult? Function()? healthStepsFailed,
+    TResult? Function()? revokePermissionFailed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,6 +46,10 @@ mixin _$AppException {
     TResult Function()? invalidCredentials,
     TResult Function()? unknown,
     TResult Function()? noInternet,
+    TResult Function()? healthFetchFailed,
+    TResult Function()? healthNotAuthorized,
+    TResult Function()? healthStepsFailed,
+    TResult Function()? revokePermissionFailed,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,6 +59,11 @@ mixin _$AppException {
     required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(Unknown value) unknown,
     required TResult Function(NoInternet value) noInternet,
+    required TResult Function(HealthFetchFailed value) healthFetchFailed,
+    required TResult Function(HealthNotAuthorized value) healthNotAuthorized,
+    required TResult Function(HealthStepsFailed value) healthStepsFailed,
+    required TResult Function(RevokePermissionFailed value)
+        revokePermissionFailed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +72,10 @@ mixin _$AppException {
     TResult? Function(InvalidCredentials value)? invalidCredentials,
     TResult? Function(Unknown value)? unknown,
     TResult? Function(NoInternet value)? noInternet,
+    TResult? Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult? Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult? Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult? Function(RevokePermissionFailed value)? revokePermissionFailed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +84,10 @@ mixin _$AppException {
     TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(Unknown value)? unknown,
     TResult Function(NoInternet value)? noInternet,
+    TResult Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult Function(RevokePermissionFailed value)? revokePermissionFailed,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -128,6 +153,10 @@ class _$AccountExists implements AccountExists {
     required TResult Function() invalidCredentials,
     required TResult Function() unknown,
     required TResult Function() noInternet,
+    required TResult Function() healthFetchFailed,
+    required TResult Function() healthNotAuthorized,
+    required TResult Function() healthStepsFailed,
+    required TResult Function() revokePermissionFailed,
   }) {
     return accountExists();
   }
@@ -139,6 +168,10 @@ class _$AccountExists implements AccountExists {
     TResult? Function()? invalidCredentials,
     TResult? Function()? unknown,
     TResult? Function()? noInternet,
+    TResult? Function()? healthFetchFailed,
+    TResult? Function()? healthNotAuthorized,
+    TResult? Function()? healthStepsFailed,
+    TResult? Function()? revokePermissionFailed,
   }) {
     return accountExists?.call();
   }
@@ -150,6 +183,10 @@ class _$AccountExists implements AccountExists {
     TResult Function()? invalidCredentials,
     TResult Function()? unknown,
     TResult Function()? noInternet,
+    TResult Function()? healthFetchFailed,
+    TResult Function()? healthNotAuthorized,
+    TResult Function()? healthStepsFailed,
+    TResult Function()? revokePermissionFailed,
     required TResult orElse(),
   }) {
     if (accountExists != null) {
@@ -165,6 +202,11 @@ class _$AccountExists implements AccountExists {
     required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(Unknown value) unknown,
     required TResult Function(NoInternet value) noInternet,
+    required TResult Function(HealthFetchFailed value) healthFetchFailed,
+    required TResult Function(HealthNotAuthorized value) healthNotAuthorized,
+    required TResult Function(HealthStepsFailed value) healthStepsFailed,
+    required TResult Function(RevokePermissionFailed value)
+        revokePermissionFailed,
   }) {
     return accountExists(this);
   }
@@ -176,6 +218,10 @@ class _$AccountExists implements AccountExists {
     TResult? Function(InvalidCredentials value)? invalidCredentials,
     TResult? Function(Unknown value)? unknown,
     TResult? Function(NoInternet value)? noInternet,
+    TResult? Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult? Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult? Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult? Function(RevokePermissionFailed value)? revokePermissionFailed,
   }) {
     return accountExists?.call(this);
   }
@@ -187,6 +233,10 @@ class _$AccountExists implements AccountExists {
     TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(Unknown value)? unknown,
     TResult Function(NoInternet value)? noInternet,
+    TResult Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult Function(RevokePermissionFailed value)? revokePermissionFailed,
     required TResult orElse(),
   }) {
     if (accountExists != null) {
@@ -242,6 +292,10 @@ class _$InvalidCredentials implements InvalidCredentials {
     required TResult Function() invalidCredentials,
     required TResult Function() unknown,
     required TResult Function() noInternet,
+    required TResult Function() healthFetchFailed,
+    required TResult Function() healthNotAuthorized,
+    required TResult Function() healthStepsFailed,
+    required TResult Function() revokePermissionFailed,
   }) {
     return invalidCredentials();
   }
@@ -253,6 +307,10 @@ class _$InvalidCredentials implements InvalidCredentials {
     TResult? Function()? invalidCredentials,
     TResult? Function()? unknown,
     TResult? Function()? noInternet,
+    TResult? Function()? healthFetchFailed,
+    TResult? Function()? healthNotAuthorized,
+    TResult? Function()? healthStepsFailed,
+    TResult? Function()? revokePermissionFailed,
   }) {
     return invalidCredentials?.call();
   }
@@ -264,6 +322,10 @@ class _$InvalidCredentials implements InvalidCredentials {
     TResult Function()? invalidCredentials,
     TResult Function()? unknown,
     TResult Function()? noInternet,
+    TResult Function()? healthFetchFailed,
+    TResult Function()? healthNotAuthorized,
+    TResult Function()? healthStepsFailed,
+    TResult Function()? revokePermissionFailed,
     required TResult orElse(),
   }) {
     if (invalidCredentials != null) {
@@ -279,6 +341,11 @@ class _$InvalidCredentials implements InvalidCredentials {
     required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(Unknown value) unknown,
     required TResult Function(NoInternet value) noInternet,
+    required TResult Function(HealthFetchFailed value) healthFetchFailed,
+    required TResult Function(HealthNotAuthorized value) healthNotAuthorized,
+    required TResult Function(HealthStepsFailed value) healthStepsFailed,
+    required TResult Function(RevokePermissionFailed value)
+        revokePermissionFailed,
   }) {
     return invalidCredentials(this);
   }
@@ -290,6 +357,10 @@ class _$InvalidCredentials implements InvalidCredentials {
     TResult? Function(InvalidCredentials value)? invalidCredentials,
     TResult? Function(Unknown value)? unknown,
     TResult? Function(NoInternet value)? noInternet,
+    TResult? Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult? Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult? Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult? Function(RevokePermissionFailed value)? revokePermissionFailed,
   }) {
     return invalidCredentials?.call(this);
   }
@@ -301,6 +372,10 @@ class _$InvalidCredentials implements InvalidCredentials {
     TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(Unknown value)? unknown,
     TResult Function(NoInternet value)? noInternet,
+    TResult Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult Function(RevokePermissionFailed value)? revokePermissionFailed,
     required TResult orElse(),
   }) {
     if (invalidCredentials != null) {
@@ -354,6 +429,10 @@ class _$Unknown implements Unknown {
     required TResult Function() invalidCredentials,
     required TResult Function() unknown,
     required TResult Function() noInternet,
+    required TResult Function() healthFetchFailed,
+    required TResult Function() healthNotAuthorized,
+    required TResult Function() healthStepsFailed,
+    required TResult Function() revokePermissionFailed,
   }) {
     return unknown();
   }
@@ -365,6 +444,10 @@ class _$Unknown implements Unknown {
     TResult? Function()? invalidCredentials,
     TResult? Function()? unknown,
     TResult? Function()? noInternet,
+    TResult? Function()? healthFetchFailed,
+    TResult? Function()? healthNotAuthorized,
+    TResult? Function()? healthStepsFailed,
+    TResult? Function()? revokePermissionFailed,
   }) {
     return unknown?.call();
   }
@@ -376,6 +459,10 @@ class _$Unknown implements Unknown {
     TResult Function()? invalidCredentials,
     TResult Function()? unknown,
     TResult Function()? noInternet,
+    TResult Function()? healthFetchFailed,
+    TResult Function()? healthNotAuthorized,
+    TResult Function()? healthStepsFailed,
+    TResult Function()? revokePermissionFailed,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -391,6 +478,11 @@ class _$Unknown implements Unknown {
     required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(Unknown value) unknown,
     required TResult Function(NoInternet value) noInternet,
+    required TResult Function(HealthFetchFailed value) healthFetchFailed,
+    required TResult Function(HealthNotAuthorized value) healthNotAuthorized,
+    required TResult Function(HealthStepsFailed value) healthStepsFailed,
+    required TResult Function(RevokePermissionFailed value)
+        revokePermissionFailed,
   }) {
     return unknown(this);
   }
@@ -402,6 +494,10 @@ class _$Unknown implements Unknown {
     TResult? Function(InvalidCredentials value)? invalidCredentials,
     TResult? Function(Unknown value)? unknown,
     TResult? Function(NoInternet value)? noInternet,
+    TResult? Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult? Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult? Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult? Function(RevokePermissionFailed value)? revokePermissionFailed,
   }) {
     return unknown?.call(this);
   }
@@ -413,6 +509,10 @@ class _$Unknown implements Unknown {
     TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(Unknown value)? unknown,
     TResult Function(NoInternet value)? noInternet,
+    TResult Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult Function(RevokePermissionFailed value)? revokePermissionFailed,
     required TResult orElse(),
   }) {
     if (unknown != null) {
@@ -468,6 +568,10 @@ class _$NoInternet implements NoInternet {
     required TResult Function() invalidCredentials,
     required TResult Function() unknown,
     required TResult Function() noInternet,
+    required TResult Function() healthFetchFailed,
+    required TResult Function() healthNotAuthorized,
+    required TResult Function() healthStepsFailed,
+    required TResult Function() revokePermissionFailed,
   }) {
     return noInternet();
   }
@@ -479,6 +583,10 @@ class _$NoInternet implements NoInternet {
     TResult? Function()? invalidCredentials,
     TResult? Function()? unknown,
     TResult? Function()? noInternet,
+    TResult? Function()? healthFetchFailed,
+    TResult? Function()? healthNotAuthorized,
+    TResult? Function()? healthStepsFailed,
+    TResult? Function()? revokePermissionFailed,
   }) {
     return noInternet?.call();
   }
@@ -490,6 +598,10 @@ class _$NoInternet implements NoInternet {
     TResult Function()? invalidCredentials,
     TResult Function()? unknown,
     TResult Function()? noInternet,
+    TResult Function()? healthFetchFailed,
+    TResult Function()? healthNotAuthorized,
+    TResult Function()? healthStepsFailed,
+    TResult Function()? revokePermissionFailed,
     required TResult orElse(),
   }) {
     if (noInternet != null) {
@@ -505,6 +617,11 @@ class _$NoInternet implements NoInternet {
     required TResult Function(InvalidCredentials value) invalidCredentials,
     required TResult Function(Unknown value) unknown,
     required TResult Function(NoInternet value) noInternet,
+    required TResult Function(HealthFetchFailed value) healthFetchFailed,
+    required TResult Function(HealthNotAuthorized value) healthNotAuthorized,
+    required TResult Function(HealthStepsFailed value) healthStepsFailed,
+    required TResult Function(RevokePermissionFailed value)
+        revokePermissionFailed,
   }) {
     return noInternet(this);
   }
@@ -516,6 +633,10 @@ class _$NoInternet implements NoInternet {
     TResult? Function(InvalidCredentials value)? invalidCredentials,
     TResult? Function(Unknown value)? unknown,
     TResult? Function(NoInternet value)? noInternet,
+    TResult? Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult? Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult? Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult? Function(RevokePermissionFailed value)? revokePermissionFailed,
   }) {
     return noInternet?.call(this);
   }
@@ -527,6 +648,10 @@ class _$NoInternet implements NoInternet {
     TResult Function(InvalidCredentials value)? invalidCredentials,
     TResult Function(Unknown value)? unknown,
     TResult Function(NoInternet value)? noInternet,
+    TResult Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult Function(RevokePermissionFailed value)? revokePermissionFailed,
     required TResult orElse(),
   }) {
     if (noInternet != null) {
@@ -538,4 +663,560 @@ class _$NoInternet implements NoInternet {
 
 abstract class NoInternet implements AppException {
   const factory NoInternet() = _$NoInternet;
+}
+
+/// @nodoc
+abstract class _$$HealthFetchFailedCopyWith<$Res> {
+  factory _$$HealthFetchFailedCopyWith(
+          _$HealthFetchFailed value, $Res Function(_$HealthFetchFailed) then) =
+      __$$HealthFetchFailedCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$HealthFetchFailedCopyWithImpl<$Res>
+    extends _$AppExceptionCopyWithImpl<$Res, _$HealthFetchFailed>
+    implements _$$HealthFetchFailedCopyWith<$Res> {
+  __$$HealthFetchFailedCopyWithImpl(
+      _$HealthFetchFailed _value, $Res Function(_$HealthFetchFailed) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$HealthFetchFailed implements HealthFetchFailed {
+  const _$HealthFetchFailed();
+
+  @override
+  String toString() {
+    return 'AppException.healthFetchFailed()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$HealthFetchFailed);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() accountExists,
+    required TResult Function() invalidCredentials,
+    required TResult Function() unknown,
+    required TResult Function() noInternet,
+    required TResult Function() healthFetchFailed,
+    required TResult Function() healthNotAuthorized,
+    required TResult Function() healthStepsFailed,
+    required TResult Function() revokePermissionFailed,
+  }) {
+    return healthFetchFailed();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? accountExists,
+    TResult? Function()? invalidCredentials,
+    TResult? Function()? unknown,
+    TResult? Function()? noInternet,
+    TResult? Function()? healthFetchFailed,
+    TResult? Function()? healthNotAuthorized,
+    TResult? Function()? healthStepsFailed,
+    TResult? Function()? revokePermissionFailed,
+  }) {
+    return healthFetchFailed?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? accountExists,
+    TResult Function()? invalidCredentials,
+    TResult Function()? unknown,
+    TResult Function()? noInternet,
+    TResult Function()? healthFetchFailed,
+    TResult Function()? healthNotAuthorized,
+    TResult Function()? healthStepsFailed,
+    TResult Function()? revokePermissionFailed,
+    required TResult orElse(),
+  }) {
+    if (healthFetchFailed != null) {
+      return healthFetchFailed();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(AccountExists value) accountExists,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
+    required TResult Function(Unknown value) unknown,
+    required TResult Function(NoInternet value) noInternet,
+    required TResult Function(HealthFetchFailed value) healthFetchFailed,
+    required TResult Function(HealthNotAuthorized value) healthNotAuthorized,
+    required TResult Function(HealthStepsFailed value) healthStepsFailed,
+    required TResult Function(RevokePermissionFailed value)
+        revokePermissionFailed,
+  }) {
+    return healthFetchFailed(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AccountExists value)? accountExists,
+    TResult? Function(InvalidCredentials value)? invalidCredentials,
+    TResult? Function(Unknown value)? unknown,
+    TResult? Function(NoInternet value)? noInternet,
+    TResult? Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult? Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult? Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult? Function(RevokePermissionFailed value)? revokePermissionFailed,
+  }) {
+    return healthFetchFailed?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(AccountExists value)? accountExists,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
+    TResult Function(Unknown value)? unknown,
+    TResult Function(NoInternet value)? noInternet,
+    TResult Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult Function(RevokePermissionFailed value)? revokePermissionFailed,
+    required TResult orElse(),
+  }) {
+    if (healthFetchFailed != null) {
+      return healthFetchFailed(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class HealthFetchFailed implements AppException {
+  const factory HealthFetchFailed() = _$HealthFetchFailed;
+}
+
+/// @nodoc
+abstract class _$$HealthNotAuthorizedCopyWith<$Res> {
+  factory _$$HealthNotAuthorizedCopyWith(_$HealthNotAuthorized value,
+          $Res Function(_$HealthNotAuthorized) then) =
+      __$$HealthNotAuthorizedCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$HealthNotAuthorizedCopyWithImpl<$Res>
+    extends _$AppExceptionCopyWithImpl<$Res, _$HealthNotAuthorized>
+    implements _$$HealthNotAuthorizedCopyWith<$Res> {
+  __$$HealthNotAuthorizedCopyWithImpl(
+      _$HealthNotAuthorized _value, $Res Function(_$HealthNotAuthorized) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$HealthNotAuthorized implements HealthNotAuthorized {
+  const _$HealthNotAuthorized();
+
+  @override
+  String toString() {
+    return 'AppException.healthNotAuthorized()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$HealthNotAuthorized);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() accountExists,
+    required TResult Function() invalidCredentials,
+    required TResult Function() unknown,
+    required TResult Function() noInternet,
+    required TResult Function() healthFetchFailed,
+    required TResult Function() healthNotAuthorized,
+    required TResult Function() healthStepsFailed,
+    required TResult Function() revokePermissionFailed,
+  }) {
+    return healthNotAuthorized();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? accountExists,
+    TResult? Function()? invalidCredentials,
+    TResult? Function()? unknown,
+    TResult? Function()? noInternet,
+    TResult? Function()? healthFetchFailed,
+    TResult? Function()? healthNotAuthorized,
+    TResult? Function()? healthStepsFailed,
+    TResult? Function()? revokePermissionFailed,
+  }) {
+    return healthNotAuthorized?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? accountExists,
+    TResult Function()? invalidCredentials,
+    TResult Function()? unknown,
+    TResult Function()? noInternet,
+    TResult Function()? healthFetchFailed,
+    TResult Function()? healthNotAuthorized,
+    TResult Function()? healthStepsFailed,
+    TResult Function()? revokePermissionFailed,
+    required TResult orElse(),
+  }) {
+    if (healthNotAuthorized != null) {
+      return healthNotAuthorized();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(AccountExists value) accountExists,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
+    required TResult Function(Unknown value) unknown,
+    required TResult Function(NoInternet value) noInternet,
+    required TResult Function(HealthFetchFailed value) healthFetchFailed,
+    required TResult Function(HealthNotAuthorized value) healthNotAuthorized,
+    required TResult Function(HealthStepsFailed value) healthStepsFailed,
+    required TResult Function(RevokePermissionFailed value)
+        revokePermissionFailed,
+  }) {
+    return healthNotAuthorized(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AccountExists value)? accountExists,
+    TResult? Function(InvalidCredentials value)? invalidCredentials,
+    TResult? Function(Unknown value)? unknown,
+    TResult? Function(NoInternet value)? noInternet,
+    TResult? Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult? Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult? Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult? Function(RevokePermissionFailed value)? revokePermissionFailed,
+  }) {
+    return healthNotAuthorized?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(AccountExists value)? accountExists,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
+    TResult Function(Unknown value)? unknown,
+    TResult Function(NoInternet value)? noInternet,
+    TResult Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult Function(RevokePermissionFailed value)? revokePermissionFailed,
+    required TResult orElse(),
+  }) {
+    if (healthNotAuthorized != null) {
+      return healthNotAuthorized(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class HealthNotAuthorized implements AppException {
+  const factory HealthNotAuthorized() = _$HealthNotAuthorized;
+}
+
+/// @nodoc
+abstract class _$$HealthStepsFailedCopyWith<$Res> {
+  factory _$$HealthStepsFailedCopyWith(
+          _$HealthStepsFailed value, $Res Function(_$HealthStepsFailed) then) =
+      __$$HealthStepsFailedCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$HealthStepsFailedCopyWithImpl<$Res>
+    extends _$AppExceptionCopyWithImpl<$Res, _$HealthStepsFailed>
+    implements _$$HealthStepsFailedCopyWith<$Res> {
+  __$$HealthStepsFailedCopyWithImpl(
+      _$HealthStepsFailed _value, $Res Function(_$HealthStepsFailed) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$HealthStepsFailed implements HealthStepsFailed {
+  const _$HealthStepsFailed();
+
+  @override
+  String toString() {
+    return 'AppException.healthStepsFailed()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$HealthStepsFailed);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() accountExists,
+    required TResult Function() invalidCredentials,
+    required TResult Function() unknown,
+    required TResult Function() noInternet,
+    required TResult Function() healthFetchFailed,
+    required TResult Function() healthNotAuthorized,
+    required TResult Function() healthStepsFailed,
+    required TResult Function() revokePermissionFailed,
+  }) {
+    return healthStepsFailed();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? accountExists,
+    TResult? Function()? invalidCredentials,
+    TResult? Function()? unknown,
+    TResult? Function()? noInternet,
+    TResult? Function()? healthFetchFailed,
+    TResult? Function()? healthNotAuthorized,
+    TResult? Function()? healthStepsFailed,
+    TResult? Function()? revokePermissionFailed,
+  }) {
+    return healthStepsFailed?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? accountExists,
+    TResult Function()? invalidCredentials,
+    TResult Function()? unknown,
+    TResult Function()? noInternet,
+    TResult Function()? healthFetchFailed,
+    TResult Function()? healthNotAuthorized,
+    TResult Function()? healthStepsFailed,
+    TResult Function()? revokePermissionFailed,
+    required TResult orElse(),
+  }) {
+    if (healthStepsFailed != null) {
+      return healthStepsFailed();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(AccountExists value) accountExists,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
+    required TResult Function(Unknown value) unknown,
+    required TResult Function(NoInternet value) noInternet,
+    required TResult Function(HealthFetchFailed value) healthFetchFailed,
+    required TResult Function(HealthNotAuthorized value) healthNotAuthorized,
+    required TResult Function(HealthStepsFailed value) healthStepsFailed,
+    required TResult Function(RevokePermissionFailed value)
+        revokePermissionFailed,
+  }) {
+    return healthStepsFailed(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AccountExists value)? accountExists,
+    TResult? Function(InvalidCredentials value)? invalidCredentials,
+    TResult? Function(Unknown value)? unknown,
+    TResult? Function(NoInternet value)? noInternet,
+    TResult? Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult? Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult? Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult? Function(RevokePermissionFailed value)? revokePermissionFailed,
+  }) {
+    return healthStepsFailed?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(AccountExists value)? accountExists,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
+    TResult Function(Unknown value)? unknown,
+    TResult Function(NoInternet value)? noInternet,
+    TResult Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult Function(RevokePermissionFailed value)? revokePermissionFailed,
+    required TResult orElse(),
+  }) {
+    if (healthStepsFailed != null) {
+      return healthStepsFailed(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class HealthStepsFailed implements AppException {
+  const factory HealthStepsFailed() = _$HealthStepsFailed;
+}
+
+/// @nodoc
+abstract class _$$RevokePermissionFailedCopyWith<$Res> {
+  factory _$$RevokePermissionFailedCopyWith(_$RevokePermissionFailed value,
+          $Res Function(_$RevokePermissionFailed) then) =
+      __$$RevokePermissionFailedCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$RevokePermissionFailedCopyWithImpl<$Res>
+    extends _$AppExceptionCopyWithImpl<$Res, _$RevokePermissionFailed>
+    implements _$$RevokePermissionFailedCopyWith<$Res> {
+  __$$RevokePermissionFailedCopyWithImpl(_$RevokePermissionFailed _value,
+      $Res Function(_$RevokePermissionFailed) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$RevokePermissionFailed implements RevokePermissionFailed {
+  const _$RevokePermissionFailed();
+
+  @override
+  String toString() {
+    return 'AppException.revokePermissionFailed()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$RevokePermissionFailed);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() accountExists,
+    required TResult Function() invalidCredentials,
+    required TResult Function() unknown,
+    required TResult Function() noInternet,
+    required TResult Function() healthFetchFailed,
+    required TResult Function() healthNotAuthorized,
+    required TResult Function() healthStepsFailed,
+    required TResult Function() revokePermissionFailed,
+  }) {
+    return revokePermissionFailed();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? accountExists,
+    TResult? Function()? invalidCredentials,
+    TResult? Function()? unknown,
+    TResult? Function()? noInternet,
+    TResult? Function()? healthFetchFailed,
+    TResult? Function()? healthNotAuthorized,
+    TResult? Function()? healthStepsFailed,
+    TResult? Function()? revokePermissionFailed,
+  }) {
+    return revokePermissionFailed?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? accountExists,
+    TResult Function()? invalidCredentials,
+    TResult Function()? unknown,
+    TResult Function()? noInternet,
+    TResult Function()? healthFetchFailed,
+    TResult Function()? healthNotAuthorized,
+    TResult Function()? healthStepsFailed,
+    TResult Function()? revokePermissionFailed,
+    required TResult orElse(),
+  }) {
+    if (revokePermissionFailed != null) {
+      return revokePermissionFailed();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(AccountExists value) accountExists,
+    required TResult Function(InvalidCredentials value) invalidCredentials,
+    required TResult Function(Unknown value) unknown,
+    required TResult Function(NoInternet value) noInternet,
+    required TResult Function(HealthFetchFailed value) healthFetchFailed,
+    required TResult Function(HealthNotAuthorized value) healthNotAuthorized,
+    required TResult Function(HealthStepsFailed value) healthStepsFailed,
+    required TResult Function(RevokePermissionFailed value)
+        revokePermissionFailed,
+  }) {
+    return revokePermissionFailed(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(AccountExists value)? accountExists,
+    TResult? Function(InvalidCredentials value)? invalidCredentials,
+    TResult? Function(Unknown value)? unknown,
+    TResult? Function(NoInternet value)? noInternet,
+    TResult? Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult? Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult? Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult? Function(RevokePermissionFailed value)? revokePermissionFailed,
+  }) {
+    return revokePermissionFailed?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(AccountExists value)? accountExists,
+    TResult Function(InvalidCredentials value)? invalidCredentials,
+    TResult Function(Unknown value)? unknown,
+    TResult Function(NoInternet value)? noInternet,
+    TResult Function(HealthFetchFailed value)? healthFetchFailed,
+    TResult Function(HealthNotAuthorized value)? healthNotAuthorized,
+    TResult Function(HealthStepsFailed value)? healthStepsFailed,
+    TResult Function(RevokePermissionFailed value)? revokePermissionFailed,
+    required TResult orElse(),
+  }) {
+    if (revokePermissionFailed != null) {
+      return revokePermissionFailed(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class RevokePermissionFailed implements AppException {
+  const factory RevokePermissionFailed() = _$RevokePermissionFailed;
 }
