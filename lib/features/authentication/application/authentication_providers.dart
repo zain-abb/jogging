@@ -5,13 +5,15 @@ import '../data/data_source/authentication_data_source.dart';
 import '../data/repositories/authentication_repository_impl.dart';
 import '../domain/repositories/authentication_repository.dart';
 import '../domain/usecases/sign_in_usecase.dart';
+import '../domain/usecases/sign_out_usecase.dart';
 
 part 'authentication_providers.g.dart';
 
 ///
 /// Provider for the [AuthenticationDataSource] instance with AutoDispose
 @riverpod
-AuthenticationDataSource authenticationDataSource(AuthenticationDataSourceRef ref) {
+AuthenticationDataSource authenticationDataSource(
+    AuthenticationDataSourceRef ref) {
   final auth = ref.watch(firebaseAuthProvider);
   return AuthenticationDataSourceImpl(auth);
 }
@@ -19,10 +21,12 @@ AuthenticationDataSource authenticationDataSource(AuthenticationDataSourceRef re
 ///
 /// Provider for the [AuthenticationRepository] instance with AutoDispose
 @riverpod
-AuthenticationRepository authenticationRepository(AuthenticationRepositoryRef ref) {
+AuthenticationRepository authenticationRepository(
+    AuthenticationRepositoryRef ref) {
   final networkInfo = ref.watch(networkInfoProvider);
   final dataSource = ref.watch(authenticationDataSourceProvider);
-  return AuthenticationRepositoryImpl(networkInfo: networkInfo, dataSource: dataSource);
+  return AuthenticationRepositoryImpl(
+      networkInfo: networkInfo, dataSource: dataSource);
 }
 
 ///
@@ -31,4 +35,12 @@ AuthenticationRepository authenticationRepository(AuthenticationRepositoryRef re
 SignInUsecase signInUsecase(SignInUsecaseRef ref) {
   final repository = ref.watch(authenticationRepositoryProvider);
   return SignInUsecase(repository);
+}
+
+///
+/// Provider for the [SignOutUsecase] instance with AutoDispose
+@riverpod
+SignOutUsecase signOutUsecase(SignOutUsecaseRef ref) {
+  final repository = ref.watch(authenticationRepositoryProvider);
+  return SignOutUsecase(repository);
 }

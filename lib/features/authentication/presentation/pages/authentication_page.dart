@@ -4,11 +4,13 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:jogging/app/router/app_router.dart';
 import 'package:jogging/shared/presentation/widgets/ui_helper.dart';
 
 import '../../../../app/extensions.dart';
 import '../../../../app/resource/assets.dart';
 import '../../../../app/resource/i18n.dart';
+import '../../../../app/router/app_router.gr.dart';
 import '../../../../shared/presentation/widgets/primary_button.dart';
 import '../../domain/entities/app_user.dart';
 import '../controller/authentication_controller.dart';
@@ -37,7 +39,8 @@ class _AuthenticationPageState extends ConsumerState<AuthenticationPage> {
           state.showAlertDialogOnError(context);
         } else {
           if (state.asData?.value?.displayName != null) {
-            UiHelper.displaySuccess(context, 'Welcome ${state.asData?.value?.displayName}!'.hardcoded);
+            UiHelper.displaySuccess(context,
+                'Welcome ${state.asData?.value?.displayName}!'.hardcoded);
           }
         }
       },
@@ -52,21 +55,25 @@ class _AuthenticationPageState extends ConsumerState<AuthenticationPage> {
             children: [
               Text(
                 i18n.jogging,
-                style: theme.textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.w900),
+                style: theme.textTheme.headlineSmall
+                    ?.copyWith(fontWeight: FontWeight.w900),
               ),
               const Spacer(),
               Image.asset(Assets.image.illustration),
               const Spacer(),
               Text(
                 i18n.analyze_steps,
-                style: theme.textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.w900),
+                style: theme.textTheme.headlineSmall
+                    ?.copyWith(fontWeight: FontWeight.w900),
               ),
               dimens.gapH8,
               Text(i18n.analyze_steps_desc, style: theme.textTheme.titleMedium),
               dimens.gapH32,
               Align(
                 alignment: Alignment.center,
-                child: Platform.isAndroid ? _googleButton(state.isLoading) : _appleButton(state.isLoading),
+                child: Platform.isAndroid
+                    ? _googleButton(state.isLoading)
+                    : _appleButton(state.isLoading),
               ),
               const Spacer(),
             ],
@@ -101,6 +108,9 @@ class _AuthenticationPageState extends ConsumerState<AuthenticationPage> {
   Future<void> _continueWithGoogle() async {
     final controller = ref.read(authenticationControllerProvider.notifier);
     final user = await controller.continueWithGoogle();
-    // Todo: Move to home screen
+    if (user != null) {
+      final router = ref.read(appRouterProvider);
+      router.pushAndPopUntil(const HomeRoute(), predicate: (_) => false);
+    }
   }
 }

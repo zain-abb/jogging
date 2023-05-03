@@ -3,12 +3,10 @@ import 'package:flutter/material.dart';
 class AppTypography {
   AppTypography._();
 
-  static const vollkornFamily = 'Vollkorn';
-  static const interFamily = 'Inter';
+  static const fontFamily = 'SF-Pro-Display';
 
   static const textTheme = TextTheme(
     displayLarge: TextStyle(
-      fontFamily: vollkornFamily,
       fontSize: 57.0,
       fontWeight: FontWeight.w400,
       letterSpacing: -0.25,
@@ -17,7 +15,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     displayMedium: TextStyle(
-      fontFamily: vollkornFamily,
       fontSize: 45.0,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.0,
@@ -26,7 +23,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     displaySmall: TextStyle(
-      fontFamily: vollkornFamily,
       fontSize: 36.0,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.0,
@@ -35,7 +31,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     headlineLarge: TextStyle(
-      fontFamily: vollkornFamily,
       fontSize: 32.0,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.0,
@@ -44,7 +39,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     headlineMedium: TextStyle(
-      fontFamily: vollkornFamily,
       fontSize: 28.0,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.0,
@@ -53,7 +47,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     headlineSmall: TextStyle(
-      fontFamily: vollkornFamily,
       fontSize: 24.0,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.0,
@@ -62,7 +55,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     titleLarge: TextStyle(
-      fontFamily: interFamily,
       fontSize: 22.0,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.0,
@@ -71,7 +63,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     titleMedium: TextStyle(
-      fontFamily: interFamily,
       fontSize: 16.0,
       fontWeight: FontWeight.w500,
       letterSpacing: 0.15,
@@ -80,7 +71,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     titleSmall: TextStyle(
-      fontFamily: interFamily,
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
       letterSpacing: 0.1,
@@ -89,7 +79,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     labelLarge: TextStyle(
-      fontFamily: interFamily,
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
       letterSpacing: 0.1,
@@ -98,7 +87,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     labelMedium: TextStyle(
-      fontFamily: interFamily,
       fontSize: 12.0,
       fontWeight: FontWeight.w500,
       letterSpacing: 0.5,
@@ -107,7 +95,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     labelSmall: TextStyle(
-      fontFamily: interFamily,
       fontSize: 11.0,
       fontWeight: FontWeight.w500,
       letterSpacing: 0.5,
@@ -116,7 +103,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     bodyLarge: TextStyle(
-      fontFamily: interFamily,
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.5,
@@ -125,7 +111,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     bodyMedium: TextStyle(
-      fontFamily: interFamily,
       fontSize: 14.0,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.25,
@@ -134,7 +119,6 @@ class AppTypography {
       leadingDistribution: TextLeadingDistribution.even,
     ),
     bodySmall: TextStyle(
-      fontFamily: interFamily,
       fontSize: 12.0,
       fontWeight: FontWeight.w400,
       letterSpacing: 0.4,

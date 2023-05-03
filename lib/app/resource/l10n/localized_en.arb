@@ -38,5 +38,10 @@
   "analyze_steps": "Analyze Steps",
   "analyze_steps_desc": "Analyze your steps by specific duration. To continue please: ",
   "btn_sign_in_with_google": "Sign in with Google",
-  "btn_sign_in_with_apple": "Sign in with Apple"
+  "btn_sign_in_with_apple": "Sign in with Apple",
+
+  "tab_day": "Day",
+  "tab_week": "Week",
+  "tab_month": "Month",
+  "tab_year": "Year"
 }

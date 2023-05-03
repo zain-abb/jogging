@@ -2,6 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:jogging/shared/domain/exception/app_exception.dart';
 
+import '../../../app/resource/assets.dart';
+
 /// Defines various utility methods that are related to look and feel of the app
 class UiHelper {
   UiHelper._();
@@ -16,7 +18,8 @@ class UiHelper {
           behavior: SnackBarBehavior.floating,
           content: Text(
             message,
-            style: theme.textTheme.labelMedium?.copyWith(color: theme.colorScheme.onPrimary),
+            style: theme.textTheme.labelMedium
+                ?.copyWith(color: theme.colorScheme.onPrimary),
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
           ),
@@ -32,7 +35,8 @@ class UiHelper {
       behavior: SnackBarBehavior.floating,
       content: Text(
         message,
-        style: theme.textTheme.labelMedium?.copyWith(color: theme.colorScheme.onError),
+        style: theme.textTheme.labelMedium
+            ?.copyWith(color: theme.colorScheme.onError),
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
       ),
@@ -61,8 +65,8 @@ class UiHelper {
       double? height,
       BoxFit? fit}) {
     // Set default placeholder
-    // placeholder ??= Assets.image.loadingImage;
-    // errorPlaceholder ??= Assets.image.errorImage;
+    placeholder ??= Assets.image.loading;
+    errorPlaceholder ??= Assets.image.error;
 
     return CachedNetworkImage(
       placeholder: (context, _) => Image.asset(placeholder!),
@@ -84,5 +88,15 @@ class UiHelper {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) => operation());
     // Future.delayed(Duration.zero, () => operation);
     //TODO: Use one of the above two methods, whichever is more correct/appropriate.
+  }
+
+  static Widget displayLoader([double dimension = 32]) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: SizedBox.square(
+        dimension: dimension,
+        child: const CircularProgressIndicator.adaptive(strokeWidth: 2),
+      ),
+    );
   }
 }

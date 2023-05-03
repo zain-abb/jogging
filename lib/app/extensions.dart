@@ -12,7 +12,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../shared/domain/exception/app_exception.dart';
 
 extension StringExtension on String {
-  String get capitalize => '${this[0].toUpperCase()}${substring(1).toLowerCase()}';
+  String get capitalize =>
+      '${this[0].toUpperCase()}${substring(1).toLowerCase()}';
 
   String get hardcoded => this;
 }
@@ -75,5 +76,14 @@ extension DarkMode on BuildContext {
   bool get isDarkMode {
     final brightness = SchedulerBinding.instance.window.platformBrightness;
     return brightness == Brightness.dark;
+  }
+}
+
+extension DateTimeCheck on DateTime {
+  bool isAtSameTimeAs(DateTime date) {
+    if (day == date.day && month == date.month && year == date.year) {
+      return true;
+    }
+    return false;
   }
 }
